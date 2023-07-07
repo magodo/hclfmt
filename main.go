@@ -11,7 +11,7 @@ import (
 	"runtime/pprof"
 	"strings"
 
-	"github.com/hashicorp/hcl/hcl/printer"
+	"github.com/hashicorp/hcl/v2/hclwrite"
 )
 
 const Version = "0.1.0"
@@ -113,10 +113,7 @@ func processFile(filename string, in io.Reader, out io.Writer, stdin bool) error
 		return err
 	}
 
-	res, err := printer.Format(src)
-	if err != nil {
-		return err
-	}
+	res := hclwrite.Format(src)
 
 	if *write {
 		err = ioutil.WriteFile(filename, res, 0644)
