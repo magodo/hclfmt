@@ -1,12 +1,7 @@
-# Archived project. No maintenance. 
-
-This project is not maintained anymore and is archived. Feel free to fork and
-make your own changes if needed. For more detail read my blog post: [Taking an indefinite sabbatical from my projects](https://arslan.io/2018/10/09/taking-an-indefinite-sabbatical-from-my-projects/)
-
-Thanks to everyone for their valuable feedback and contributions.
+This project is a fork from https://github.com/fatih/hclfmt
 
 
-# hclfmt [![Build Status](http://img.shields.io/travis/fatih/hclfmt.svg?style=flat-square)](https://travis-ci.org/fatih/hclfmt)
+# hclfmt
 
 hclfmt is a command to format and prettify HCL files. It's similar to the
 popular `gofmt` command. Hook it with your favourite editor or use it from the
@@ -17,7 +12,7 @@ command line.
 If you have Go installed just do:
 
 ```bash
-go get github.com/fatih/hclfmt
+go install github.com/magodo/hclfmt@master
 ```
 
 ## Editor integration
